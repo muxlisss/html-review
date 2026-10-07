@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Ink&family=Fira+Code&family=Poppins:wght@400;600&display=swap");
+
+/* ---------- variables ---------- */
+:root {
+  --bg: #11131a;
+  --card: #1b1e29;
+  --border: #303544;
+  --lime: #c7f9cc;
+  --purple: #9b8cff;
+  --orange: #ff9b85;
+  --blue: #8fc7ff;
+  --heading: #b043ad;
+  --text: #f5f3ff;
+  --muted: #b8b8c7;
+}
+
+/* ---------- reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Use the custom image cursor and fall back to the browser cursor if needed. */
+  cursor:
+    url("../media/mouse-cursor.png") 4 4,
+    auto;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: radial-gradient(circle at center, #021027, #000000);
+  color: var(--text);
+  font-family: Poppins, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+body::before {
+  /* CSS-only particles create the animated background without JavaScript. */
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  content: "";
+  pointer-events: none;
+  opacity: 0.85;
+  background-image:
+    radial-gradient(circle, rgba(179, 255, 255, 0.8) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(179, 255, 255, 0.65) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(179, 255, 255, 0.55) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(179, 255, 255, 0.7) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(179, 255, 255, 0.5) 0 1px, transparent 2px);
+  background-position:
+    8% 110%,
+    32% 125%,
+    58% 115%,
+    78% 130%,
+    94% 105%;
+  background-size:
+    180px 260px,
+    240px 320px,
+    300px 380px,
+    220px 300px,
+    260px 340px;
+  background-repeat: repeat-y;
+  animation: particle-drift 18s linear infinite;
+}
+
+body > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes particle-drift {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-260px);
+  }
+}
+
+
+/* ---------- header ---------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 20px 5%;
+}
+
+.logo {
+  font-family: "Bitcount Ink", cursive;
+  font-size: 1.8rem;
+  color: var(--heading);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--heading);
+}
+
+/* ---------- nav ---------- */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 180px;
+  padding: 24px 12px;
+  background: rgba(23, 25, 35, 0.96);
+  border-right: 1px solid var(--border);
+  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.18);
+}
+
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.nav-icon {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.2s;
+}
+
+.site-nav a:nth-child(1) .nav-icon {
+  color: var(--lime);
+}
+
+.site-nav a:nth-child(2) .nav-icon {
+  color: var(--blue);
+}
+
+.site-nav a:nth-child(3) .nav-icon {
+  color: var(--orange);
+}
+
+.site-nav a:nth-child(4) .nav-icon {
+  color: var(--purple);
+}
+
+.site-nav a:nth-child(5) .nav-icon {
+  color: #f4d06f;
+}
+
+.site-nav a:nth-child(6) .nav-icon {
+  color: #f29fbb;
+}
+
+.site-nav a:nth-child(7) .nav-icon {
+  color: #80d8c2;
+}
+
+.site-nav a:nth-child(8) .nav-icon {
+  color: #d2b5ff;
+}
+
+.site-nav a:nth-child(9) .nav-icon {
+  color: #b8d4ff;
+}
+
+.site-nav a:hover {
+  color: var(--lime);
+  background: rgba(199, 249, 204, 0.08);
+  border-color: rgba(199, 249, 204, 0.2);
+  transform: translateX(3px);
+}
+
+.site-nav a.active {
+  background: var(--lime);
+  color: #172019;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(199, 249, 204, 0.16);
+}
+
+.site-nav a:hover .nav-icon,
+.site-nav a.active .nav-icon {
+  color: inherit;
+}
+
+.site-nav a:hover .nav-icon {
+  transform: rotate(-6deg) scale(1.08);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.site-nav a.active .nav-icon {
+  background: rgba(23, 32, 25, 0.12);
+  border-color: rgba(23, 32, 25, 0.18);
+}
