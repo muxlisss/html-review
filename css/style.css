@@ -84,6 +84,12 @@ a {
   color: var(--lime);
 }
 
+h1,
+h2 {
+  font-family: "Bitcount Ink", cursive;
+  font-weight: 400;
+}
+
 
 /* ---------- header ---------- */
 .site-header {
@@ -215,11 +221,308 @@ a {
   border-color: rgba(23, 32, 25, 0.18);
 }
 
+.site-video {
+  width: calc(100% - 180px);
+  margin: 24px 0 0 180px;
+  overflow: hidden;
+  background: #000;
+}
+
+.site-video img {
+  display: block;
+  width: 100%;
+  height: clamp(180px, 30vw, 320px);
+  border: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: min(960px, calc(100% - 260px));
+  margin: 24px auto 0;
+  padding: 20px 5% 40px;
+}
+
+main h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  display: inline-block;
+  margin: 10px 0;
+  color: var(--heading);
+}
+
+main h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: var(--heading);
+}
+
+.hero {
+  position: relative;
+  padding: 20px 0;
+}
+
+.bubble {
+  display: inline-block;
+  position: relative;
+  background: var(--blue);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 18px;
+  font-weight: 600;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 100%;
+  border: 8px solid transparent;
+  border-top-color: var(--blue);
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: var(--purple);
+  font-size: 0.85rem;
+}
+
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn.fill {
+  background: var(--lime);
+  color: #000;
+}
+
+.btn.line {
+  border: 2px solid var(--purple);
+  color: var(--text);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(198, 244, 50, 0.3);
+}
+
+.buttons,
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* ---------- cards ---------- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1 1 250px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--lime);
+}
+
+.card small {
+  color: var(--muted);
+}
+
+.card em {
+  color: var(--lime);
+  font-style: normal;
+  font-size: 0.85rem;
+}
+
+.num {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: var(--purple);
+  font-weight: 600;
+}
+
+.card:nth-child(2n) .num {
+  background: var(--orange);
+}
+
+.card:nth-child(3n) .num {
+  background: var(--blue);
+}
+
 
 /* ---------- layout ---------- */
 .site-header,
+main,
 .site-footer {
   margin-left: 180px;
+}
+
+
+/* ---------- tag blocks ---------- */
+.tag,
+.recap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--purple);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.tag h2 {
+  color: var(--heading);
+}
+
+.lbl {
+  margin: 16px 0 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.def {
+  color: var(--lime);
+}
+
+.att {
+  color: #b794ff;
+}
+
+.ex {
+  color: var(--orange);
+}
+
+
+/* ---------- code blocks ---------- */
+.code-example {
+  position: relative;
+  background: #050508;
+  color: var(--lime);
+  border-radius: 14px;
+  padding: 18px;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+}
+
+.code-example::before {
+  content: "HTML";
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.result {
+  border: 2px dashed var(--lime);
+  border-radius: 14px;
+  padding: 18px;
+  background: #1b1b26;
+  overflow: auto;
+}
+
+.result p,
+.result li {
+  margin: 4px 0;
+}
+
+.result ul,
+.result ol,
+.result dl {
+  padding-left: 24px;
+}
+
+.result h1 {
+  font-size: 2rem;
+}
+
+.result table {
+  width: auto;
+}
+
+.gif-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.box {
+  border: 2px solid var(--blue);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hl {
+  background: var(--orange);
+  padding: 0 6px;
+  border-radius: 6px;
+}
+
+
+/* ---------- tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  margin: 6px 0;
+}
+
+th,
+td {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: var(--purple);
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+td:first-child {
+  color: var(--lime);
+  font-family: "Fira Code", monospace;
 }
 
 

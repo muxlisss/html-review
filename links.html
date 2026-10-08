@@ -31,6 +31,119 @@
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
     </nav>
 
+    <main>
+      <section class="hero">
+        <p class="bubble">Chapter 3</p>
+        <h1>Links and images</h1>
+        <p>Links connect pages together and images make pages visual.</p>
+        <span class="badge">Easy</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;a&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          The anchor tag creates a link to another page, a website, an email
+          address or a place in the same page.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>href</td>
+              <td>Destination of the link</td>
+            </tr>
+            <tr>
+              <td>target</td>
+              <td>Where to open it (_blank = new tab)</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>Tooltip text</td>
+            </tr>
+            <tr>
+              <td>id (on target)</td>
+              <td>Creates an anchor to jump to</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;a href=&quot;text.html&quot;&gt;Internal link&lt;/a&gt;&lt;br&gt;
+          &lt;a href=&quot;https://www.w3schools.com&quot;
+          target=&quot;_blank&quot;&gt;External link&lt;/a&gt;&lt;br&gt; &lt;a
+          href=&quot;mailto:hello@example.com&quot;&gt;Send an email&lt;/a&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <a href="text.html">Internal link</a><br />
+          <a href="https://www.w3schools.com" target="_blank">External link</a
+          ><br />
+          <a href="mailto:hello@example.com">Send an email</a>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;img&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>Inserts an image. It has no closing tag.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>src</td>
+              <td>Path of the image file</td>
+            </tr>
+            <tr>
+              <td>alt</td>
+              <td>Text shown if the image fails</td>
+            </tr>
+            <tr>
+              <td>width / height</td>
+              <td>Size in pixels</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>Tooltip text</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;img src=&quot;media/photo.svg&quot; alt=&quot;Sample picture&quot;
+          width=&quot;200&quot;&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <img src="media/photo.jpg" alt="Sample picture" width="200" />
+        </div>
+      </article>
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          a creates links with href, target="_blank" opens a new tab, and img
+          shows a picture with src and alt.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="text.html">Previous</a>
+        <a class="btn fill" href="lists.html">Next</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">

@@ -31,6 +31,204 @@
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
     </nav>
 
+    <main>
+      <section class="hero">
+        <p class="bubble">Chapter 2</p>
+        <h1>Text formatting tags</h1>
+        <p>These tags change the meaning or the look of text.</p>
+        <span class="badge">Beginner</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;strong&gt; and &lt;em&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;strong&gt; marks very important text (bold) and &lt;em&gt; marks
+          emphasis (italic).
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;p&gt;This is &lt;strong&gt;very important&lt;/strong&gt; and
+          &lt;em&gt;emphasized&lt;/em&gt;.&lt;/p&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <p>
+            This is <strong>very important</strong> and <em>emphasized</em>.
+          </p>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;mark&gt;, &lt;del&gt;, &lt;ins&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;mark&gt; highlights, &lt;del&gt; shows removed text and
+          &lt;ins&gt; shows added text.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>cite</td>
+              <td>URL explaining the change (del, ins)</td>
+            </tr>
+            <tr>
+              <td>datetime</td>
+              <td>Date of the change</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;p&gt;Price: &lt;del&gt;20$&lt;/del&gt; &lt;ins&gt;15$&lt;/ins&gt;,
+          &lt;mark&gt;on sale&lt;/mark&gt;&lt;/p&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <p>Price: <del>20$</del> <ins>15$</ins>, <mark>on sale</mark></p>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;sub&gt; and &lt;sup&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>&lt;sub&gt; lowers text and &lt;sup&gt; raises text.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O and
+          x&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <p>H<sub>2</sub>O and x<sup>2</sup></p>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;blockquote&gt;, &lt;q&gt;, &lt;abbr&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;blockquote&gt; is a long quote, &lt;q&gt; a short inline quote and
+          &lt;abbr&gt; an abbreviation.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>cite</td>
+              <td>Source URL of the quote</td>
+            </tr>
+            <tr>
+              <td>title (abbr)</td>
+              <td>Full text shown on hover</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;blockquote&gt;Learning never stops.&lt;/blockquote&gt; &lt;p&gt;He
+          said &lt;q&gt;hello&lt;/q&gt;. We use &lt;abbr title=&quot;HyperText
+          Markup Language&quot;&gt;HTML&lt;/abbr&gt;.&lt;/p&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <blockquote>Learning never stops.</blockquote>
+          <p>
+            He said <q>hello</q>. We use
+            <abbr title="HyperText Markup Language">HTML</abbr>.
+          </p>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;code&gt; and &lt;pre&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;code&gt; shows computer code and &lt;pre&gt; keeps spaces and line
+          breaks.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;pre&gt;&lt;code&gt;let x = 5; let y = 6;&lt;/code&gt;&lt;/pre&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <div class="code-example">let x = 5; let y = 6;</div>
+        </div>
+      </article>
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          strong and em give importance, mark highlights, sub and sup lower or
+          raise text, and blockquote, q and code quote text or code.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="index.html">Previous</a>
+        <a class="btn fill" href="links.html">Next</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">
