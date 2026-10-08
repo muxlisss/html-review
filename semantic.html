@@ -31,6 +31,137 @@
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
     </nav>
 
+    <!-- Main area contains the Semantic HTML lesson. -->
+    <main>
+      <!-- Introductory section for the current chapter. -->
+      <section class="hero">
+        <p class="bubble">Chapter 8</p>
+        <h1>Semantic and layout tags</h1>
+        <p>Semantic tags describe the role of each part of a page.</p>
+        <span class="badge">Medium</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;header&gt; is the top of a page or section, &lt;nav&gt; holds main
+          links and &lt;footer&gt; is the bottom.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;header&gt;&lt;h3&gt;My site&lt;/h3&gt;&lt;/header&gt;
+          &lt;nav&gt;&lt;a
+          href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/nav&gt;
+          &lt;footer&gt;&lt;p&gt;Copyright 2026&lt;/p&gt;&lt;/footer&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <header><h3>My site</h3></header>
+          <nav><a href="index.html">Home</a></nav>
+          <footer><p>Copyright 2026</p></footer>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;main&gt; is the main content, &lt;section&gt; a theme,
+          &lt;article&gt; independent content and &lt;aside&gt; side content.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;main&gt; &lt;section&gt; &lt;article&gt;&lt;p&gt;A blog
+          post&lt;/p&gt;&lt;/article&gt; &lt;aside&gt;&lt;p&gt;Related
+          links&lt;/p&gt;&lt;/aside&gt; &lt;/section&gt; &lt;/main&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <main>
+            <section>
+              <article><p>A blog post</p></article>
+              <aside><p>Related links</p></aside>
+            </section>
+          </main>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;div&gt; and &lt;span&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;div&gt; is a block container and &lt;span&gt; is an inline
+          container. Both have no meaning by themselves.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;div class=&quot;box&quot;&gt;&lt;p&gt;A block with a &lt;span
+          class=&quot;hl&quot;&gt;word&lt;/span&gt;
+          inside.&lt;/p&gt;&lt;/div&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <div class="box">
+            <p>A block with a <span class="hl">word</span> inside.</p>
+          </div>
+        </div>
+      </article>
+      <!-- Short summary of the lesson. -->
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          header, nav, main, section, article, aside and footer give meaning to
+          the layout. div and span are neutral containers.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="media.html">Previous</a>
+        <a class="btn fill" href="metadata.html">Next</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">

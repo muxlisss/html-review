@@ -31,6 +31,150 @@
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
     </nav>
 
+    <!-- Main area contains the Lists lesson. -->
+    <main>
+      <!-- Introductory section for the current chapter. -->
+      <section class="hero">
+        <p class="bubble">Chapter 4</p>
+        <h1>Lists</h1>
+        <p>Lists group related items.</p>
+        <span class="badge">Easy</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;ul&gt; and &lt;li&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;ul&gt; is an unordered (bullet) list and &lt;li&gt; is one item of
+          a list.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>type (old)</td>
+              <td>Bullet style, use CSS instead</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;ul&gt; &lt;li&gt;HTML&lt;/li&gt; &lt;li&gt;CSS &lt;ul&gt;
+          &lt;li&gt;Flexbox&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <ul>
+            <li>HTML</li>
+            <li>
+              CSS
+              <ul>
+                <li>Flexbox</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;ol&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>An ordered (numbered) list.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>type</td>
+              <td>Numbering style: 1, A, a, I, i</td>
+            </tr>
+            <tr>
+              <td>start</td>
+              <td>First number</td>
+            </tr>
+            <tr>
+              <td>reversed</td>
+              <td>Counts down</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;ol type=&quot;A&quot; start=&quot;3&quot;&gt;
+          &lt;li&gt;Third&lt;/li&gt; &lt;li&gt;Fourth&lt;/li&gt; &lt;/ol&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <ol type="A" start="3">
+            <li>Third</li>
+            <li>Fourth</li>
+          </ol>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          A description list: &lt;dt&gt; is the term and &lt;dd&gt; is its
+          description.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;dl&gt; &lt;dt&gt;HTML&lt;/dt&gt; &lt;dd&gt;Structure of a
+          page&lt;/dd&gt; &lt;dt&gt;CSS&lt;/dt&gt; &lt;dd&gt;Style of a
+          page&lt;/dd&gt; &lt;/dl&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <dl>
+            <dt>HTML</dt>
+            <dd>Structure of a page</dd>
+            <dt>CSS</dt>
+            <dd>Style of a page</dd>
+          </dl>
+        </div>
+      </article>
+      <!-- Short summary of the lesson. -->
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          ul is a bullet list, ol is a numbered list, li is an item, and dl
+          groups terms with descriptions.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="links.html">Previous</a>
+        <a class="btn fill" href="tables.html">Next</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">

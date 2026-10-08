@@ -31,6 +31,258 @@
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
     </nav>
 
+    <!-- Main area contains the Multimedia lesson. -->
+    <main>
+      <!-- Introductory section for the current chapter. -->
+      <section class="hero">
+        <p class="bubble">Chapter 7</p>
+        <h1>Multimedia</h1>
+        <p>
+          Add sound, video and other pages inside your page. Put your files in
+          the media folder.
+        </p>
+        <span class="badge">Medium</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;audio&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>Plays sound. Use &lt;source&gt; for several formats.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>src</td>
+              <td>Audio file</td>
+            </tr>
+            <tr>
+              <td>controls</td>
+              <td>Shows play/pause buttons</td>
+            </tr>
+            <tr>
+              <td>autoplay</td>
+              <td>Starts automatically</td>
+            </tr>
+            <tr>
+              <td>loop</td>
+              <td>Repeats</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;audio controls&gt; &lt;source
+          src=&quot;media/du-bist-gut-genug.mp3&quot;
+          type=&quot;audio/mpeg&quot;&gt; Your browser does not support audio.
+          &lt;/audio&gt; &lt;img
+          src=&quot;https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dWZhbWRldDk2a245YTh3eDFjdXVldXF5endoc3doMjRxZ2Y4Ymp5OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5JWwzNwYnyINI2E8Br/giphy.gif&quot;
+          alt=&quot;Second animated GIF&quot; width=&quot;300&quot;&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <div class="gif-gallery">
+            <audio controls>
+              <source src="media/du-bist-gut-genug.mp3" type="audio/mpeg" />
+              Your browser does not support audio.
+            </audio>
+            <img
+              src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dWZhbWRldDk2a245YTh3eDFjdXVldXF5endoc3doMjRxZ2Y4Ymp5OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5JWwzNwYnyINI2E8Br/giphy.gif"
+              alt="Second animated GIF"
+              width="300"
+            />
+          </div>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>YouTube video</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>Embeds and plays a YouTube video directly on the page.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>src</td>
+              <td>YouTube video address</td>
+            </tr>
+            <tr>
+              <td>controls</td>
+              <td>Shows video controls</td>
+            </tr>
+            <tr>
+              <td>width / height</td>
+              <td>Video size</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>Accessible video description</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;iframe src=&quot;https://www.youtube.com/embed/BzYMFd-lQL4&quot;
+          width=&quot;560&quot; height=&quot;315&quot; title=&quot;YouTube
+          video&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <iframe
+            src="https://www.youtube.com/embed/BzYMFd-lQL4"
+            width="560"
+            height="315"
+            title="YouTube video"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;iframe&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>Shows another web page inside your page.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>src</td>
+              <td>Address of the page</td>
+            </tr>
+            <tr>
+              <td>width / height</td>
+              <td>Size</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>Describes the content</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;iframe src=&quot;text.html&quot; width=&quot;300&quot;
+          height=&quot;150&quot; title=&quot;Text page&quot;&gt;&lt;/iframe&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <iframe
+            src="text.html"
+            width="300"
+            height="150"
+            title="Text page"
+          ></iframe>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;figure&gt; and &lt;figcaption&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;figure&gt; groups media and &lt;figcaption&gt; gives it a caption.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;figure&gt; &lt;img src=&quot;media/front.jpg&quot;
+          alt=&quot;Sample&quot; width=&quot;200&quot;&gt;
+          &lt;figcaption&gt;Figure 1: Sample picture&lt;/figcaption&gt;
+          &lt;/figure&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <figure>
+            <img src="media/front.jpg" alt="Sample" width="200" />
+            <figcaption>Figure 1: Sample picture</figcaption>
+          </figure>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>Remote GIF image</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          An animated GIF can be displayed directly from an online image URL.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>src</td>
+              <td>URL of the online GIF</td>
+            </tr>
+            <tr>
+              <td>alt</td>
+              <td>Alternative text for accessibility</td>
+            </tr>
+            <tr>
+              <td>width</td>
+              <td>Displayed image width</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;img
+          src=&quot;https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c3Rlajhvcmxnd3U4eTkwcjh1bHZ4eW5sMHAwNTBtb2s1aGRqajExciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JIX9t2j0ZTN9S/giphy.gif&quot;
+          alt=&quot;Animated GIF&quot; width=&quot;300&quot;&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <div class="gif-gallery">
+            <img
+              src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c3Rlajhvcmxnd3U4eTkwcjh1bHZ4eW5sMHAwNTBtb2s1aGRqajExciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JIX9t2j0ZTN9S/giphy.gif"
+              alt="Animated GIF"
+              width="300"
+            />
+          </div>
+        </div>
+      </article>
+      <!-- Short summary of the lesson. -->
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          audio and video play media with controls, iframe embeds another page,
+          and figure with figcaption adds a caption.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="forms.html">Previous</a>
+        <a class="btn fill" href="semantic.html">Next</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">

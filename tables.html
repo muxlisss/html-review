@@ -31,6 +31,134 @@
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
     </nav>
 
+    <!-- Main area contains the Tables lesson. -->
+    <main>
+      <!-- Introductory section for the current chapter. -->
+      <section class="hero">
+        <p class="bubble">Chapter 5</p>
+        <h1>Tables</h1>
+        <p>Tables show data in rows and columns.</p>
+        <span class="badge">Medium</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;table&gt; creates the table, &lt;tr&gt; a row, &lt;th&gt; a header
+          cell and &lt;td&gt; a data cell.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>border (old)</td>
+              <td>Border width, use CSS instead</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;table&gt; &lt;caption&gt;Marks&lt;/caption&gt; &lt;thead&gt;
+          &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Score&lt;/th&gt;&lt;/tr&gt;
+          &lt;/thead&gt; &lt;tbody&gt;
+          &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Sara&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;
+          &lt;/tbody&gt; &lt;/table&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <table>
+            <caption>
+              Marks
+            </caption>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ali</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Sara</td>
+                <td>18</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>colspan and rowspan</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>They merge cells across columns or rows.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>colspan</td>
+              <td>Number of columns a cell covers</td>
+            </tr>
+            <tr>
+              <td>rowspan</td>
+              <td>Number of rows a cell covers</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;table&gt; &lt;tr&gt;&lt;th colspan=&quot;2&quot;&gt;Group
+          A&lt;/th&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td
+          rowspan=&quot;2&quot;&gt;Team&lt;/td&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;/tr&gt;
+          &lt;tr&gt;&lt;td&gt;Sara&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <table>
+            <tr>
+              <th colspan="2">Group A</th>
+            </tr>
+            <tr>
+              <td rowspan="2">Team</td>
+              <td>Ali</td>
+            </tr>
+            <tr>
+              <td>Sara</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+      <!-- Short summary of the lesson. -->
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          table builds the grid, tr is a row, th a header cell and td a data
+          cell. colspan and rowspan merge cells.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="lists.html">Previous</a>
+        <a class="btn fill" href="forms.html">Next</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">

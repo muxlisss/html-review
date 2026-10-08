@@ -31,6 +31,217 @@
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
     </nav>
 
+    <!-- Main area contains the Forms lesson. -->
+    <main>
+      <!-- Introductory section for the current chapter. -->
+      <section class="hero">
+        <p class="bubble">Chapter 6</p>
+        <h1>Forms</h1>
+        <p>Forms collect information from visitors.</p>
+        <span class="badge">Medium</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;form&gt;, &lt;label&gt;, &lt;input&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;form&gt; groups fields, &lt;label&gt; names a field and
+          &lt;input&gt; is a field the user fills in.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>action</td>
+              <td>Where the data is sent</td>
+            </tr>
+            <tr>
+              <td>method</td>
+              <td>get or post</td>
+            </tr>
+            <tr>
+              <td>type (input)</td>
+              <td>
+                text, email, password, radio, checkbox, number, date, submit
+              </td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>Field name sent to the server</td>
+            </tr>
+            <tr>
+              <td>placeholder</td>
+              <td>Hint text</td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>Field cannot stay empty</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt; &lt;label
+          for=&quot;n&quot;&gt;Name:&lt;/label&gt; &lt;input
+          type=&quot;text&quot; id=&quot;n&quot; name=&quot;n&quot;
+          placeholder=&quot;Your name&quot; required&gt; &lt;input
+          type=&quot;email&quot; name=&quot;mail&quot;
+          placeholder=&quot;Email&quot;&gt; &lt;input type=&quot;submit&quot;
+          value=&quot;Send&quot;&gt; &lt;/form&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <form action="#" method="post">
+            <label for="n">Name:</label>
+            <input
+              type="text"
+              id="n"
+              name="n"
+              placeholder="Your name"
+              required
+            />
+            <input type="email" name="mail" placeholder="Email" />
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;select&gt; and &lt;option&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>A drop-down list of choices.</p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>name</td>
+              <td>Field name</td>
+            </tr>
+            <tr>
+              <td>value (option)</td>
+              <td>Value sent</td>
+            </tr>
+            <tr>
+              <td>selected</td>
+              <td>Default choice</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;select name=&quot;lang&quot;&gt; &lt;option
+          value=&quot;html&quot;&gt;HTML&lt;/option&gt; &lt;option
+          value=&quot;css&quot; selected&gt;CSS&lt;/option&gt; &lt;/select&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <select name="lang">
+            <option value="html">HTML</option>
+            <option value="css" selected>CSS</option>
+          </select>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;textarea&gt; and &lt;button&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;textarea&gt; is a multi-line text field and &lt;button&gt; is a
+          clickable button.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>rows / cols</td>
+              <td>Size of the text area</td>
+            </tr>
+            <tr>
+              <td>type (button)</td>
+              <td>submit, reset or button</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;textarea rows=&quot;3&quot; cols=&quot;30&quot;&gt;Write
+          here&lt;/textarea&gt;&lt;br&gt; &lt;button
+          type=&quot;button&quot;&gt;Click me&lt;/button&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <textarea rows="3" cols="30">Write here</textarea><br />
+          <button type="button">Click me</button>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;fieldset&gt; and &lt;legend&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;fieldset&gt; groups fields in a box and &lt;legend&gt; gives it a
+          title.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>disabled</td>
+              <td>Disables all fields inside</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;fieldset&gt; &lt;legend&gt;Gender&lt;/legend&gt; &lt;input
+          type=&quot;radio&quot; name=&quot;g&quot;
+          id=&quot;m&quot;&gt;&lt;label for=&quot;m&quot;&gt;Male&lt;/label&gt;
+          &lt;input type=&quot;radio&quot; name=&quot;g&quot;
+          id=&quot;f&quot;&gt;&lt;label
+          for=&quot;f&quot;&gt;Female&lt;/label&gt; &lt;/fieldset&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="g" id="m" /><label for="m">Male</label>
+            <input type="radio" name="g" id="f" /><label for="f">Female</label>
+          </fieldset>
+        </div>
+      </article>
+      <!-- Short summary of the lesson. -->
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          form wraps the fields, label names them, input, select and textarea
+          collect data, and button sends it.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="tables.html">Previous</a>
+        <a class="btn fill" href="media.html">Next</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">
