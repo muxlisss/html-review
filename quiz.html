@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Muqaddas Amirova, Laziza Anvarova and Muxlisa Xaydarova">
+  <title>Quiz | HTML Review</title>
+  <link rel="icon" type="image/png" href="media/html_css.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">HTML<span>.</span>Review</a>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html"><span class="nav-icon">⌂</span>Home</a>
+    <a href="text.html"><span class="nav-icon">Aa</span>Text</a>
+    <a href="links.html"><span class="nav-icon">↗</span>Links</a>
+    <a href="lists.html"><span class="nav-icon">☷</span>Lists</a>
+    <a href="tables.html"><span class="nav-icon">▦</span>Tables</a>
+    <a href="forms.html"><span class="nav-icon">□</span>Forms</a>
+    <a href="media.html"><span class="nav-icon">▶</span>Media</a>
+    <a href="semantic.html"><span class="nav-icon">◇</span>Semantic</a>
+    <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
+    <a href="quiz.html" class="active"><span class="nav-icon">?</span>Quiz</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <p class="bubble">Final review</p>
+      <h1>HTML themes quiz</h1>
+      <p>Choose one answer for every question, then submit the quiz.</p>
+      <span class="badge">No JavaScript</span>
+    </section>
+    <section class="quiz-intro">
+      <h2>How it works</h2>
+      <p>TRUE, FALSE, and explanations appear only after you click Submit quiz.</p>
+    </section>
+
+    <section class="quiz" aria-label="HTML review questions">
+      <fieldset class="quiz-question">
+        <legend>1. Which element contains visible page content?</legend>
+        <label class="quiz-option correct"><input type="radio" name="q1"><span class="answer-status">TRUE</span>&lt;body&gt;</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q1"><span class="answer-status">FALSE</span>&lt;head&gt;<span class="answer-explanation">The head contains page information. Visible content belongs in body.</span></label>
+        <label class="quiz-option incorrect"><input type="radio" name="q1"><span class="answer-status">FALSE</span>&lt;title&gt;<span class="answer-explanation">Title names the browser tab. Visible content belongs in body.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>2. Which tag marks strong importance?</legend>
+        <label class="quiz-option incorrect"><input type="radio" name="q2"><span class="answer-status">FALSE</span>&lt;em&gt;<span class="answer-explanation">Em adds emphasis. Strong marks strong importance.</span></label>
+        <label class="quiz-option correct"><input type="radio" name="q2"><span class="answer-status">TRUE</span>&lt;strong&gt;</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q2"><span class="answer-status">FALSE</span>&lt;mark&gt;<span class="answer-explanation">Mark highlights text. Strong marks strong importance.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>3. Which image attribute provides alternative text?</legend>
+        <label class="quiz-option incorrect"><input type="radio" name="q3"><span class="answer-status">FALSE</span>href<span class="answer-explanation">Href points to a link. Alt describes an image.</span></label>
+        <label class="quiz-option correct"><input type="radio" name="q3"><span class="answer-status">TRUE</span>alt</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q3"><span class="answer-status">FALSE</span>src<span class="answer-explanation">Src identifies the image file. Alt provides its description.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>4. Which tag creates an unordered list?</legend>
+        <label class="quiz-option correct"><input type="radio" name="q4"><span class="answer-status">TRUE</span>&lt;ul&gt;</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q4"><span class="answer-status">FALSE</span>&lt;ol&gt;<span class="answer-explanation">Ol creates an ordered list. Ul creates an unordered list.</span></label>
+        <label class="quiz-option incorrect"><input type="radio" name="q4"><span class="answer-status">FALSE</span>&lt;li&gt;<span class="answer-explanation">Li creates one list item. Ul creates the unordered list.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>5. Which element represents a table header cell?</legend>
+        <label class="quiz-option incorrect"><input type="radio" name="q5"><span class="answer-status">FALSE</span>&lt;td&gt;<span class="answer-explanation">Td is a normal data cell. Th is a header cell.</span></label>
+        <label class="quiz-option correct"><input type="radio" name="q5"><span class="answer-status">TRUE</span>&lt;th&gt;</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q5"><span class="answer-status">FALSE</span>&lt;tr&gt;<span class="answer-explanation">Tr represents a row. Th represents a header cell.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>6. Which element collects a single-line form value?</legend>
+        <label class="quiz-option correct"><input type="radio" name="q6"><span class="answer-status">TRUE</span>&lt;input&gt;</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q6"><span class="answer-status">FALSE</span>&lt;label&gt;<span class="answer-explanation">Label names a control. Input collects a value.</span></label>
+        <label class="quiz-option incorrect"><input type="radio" name="q6"><span class="answer-status">FALSE</span>&lt;fieldset&gt;<span class="answer-explanation">Fieldset groups controls. Input collects a value.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>7. Which element embeds video?</legend>
+        <label class="quiz-option incorrect"><input type="radio" name="q7"><span class="answer-status">FALSE</span>&lt;audio&gt;<span class="answer-explanation">Audio embeds sound. Video embeds video.</span></label>
+        <label class="quiz-option correct"><input type="radio" name="q7"><span class="answer-status">TRUE</span>&lt;video&gt;</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q7"><span class="answer-status">FALSE</span>&lt;source&gt;<span class="answer-explanation">Source provides a media file. Video is the embedding element.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>8. Which semantic element identifies navigation links?</legend>
+        <label class="quiz-option incorrect"><input type="radio" name="q8"><span class="answer-status">FALSE</span>&lt;section&gt;<span class="answer-explanation">Section groups content. Nav identifies navigation.</span></label>
+        <label class="quiz-option correct"><input type="radio" name="q8"><span class="answer-status">TRUE</span>&lt;nav&gt;</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q8"><span class="answer-status">FALSE</span>&lt;aside&gt;<span class="answer-explanation">Aside contains related secondary content. Nav identifies navigation.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>9. Where does a page description usually belong?</legend>
+        <label class="quiz-option incorrect"><input type="radio" name="q9"><span class="answer-status">FALSE</span>Inside body<span class="answer-explanation">Body contains visible content. Metadata belongs in head.</span></label>
+        <label class="quiz-option correct"><input type="radio" name="q9"><span class="answer-status">TRUE</span>Inside head</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q9"><span class="answer-status">FALSE</span>Inside footer<span class="answer-explanation">Footer is visible page content. Metadata belongs in head.</span></label>
+      </fieldset>
+      <fieldset class="quiz-question">
+        <legend>10. Which attribute connects a label to a form control?</legend>
+        <label class="quiz-option incorrect"><input type="radio" name="q10"><span class="answer-status">FALSE</span>class<span class="answer-explanation">Class groups elements for styling. A label uses for matching the control id.</span></label>
+        <label class="quiz-option correct"><input type="radio" name="q10"><span class="answer-status">TRUE</span>for</label>
+        <label class="quiz-option incorrect"><input type="radio" name="q10"><span class="answer-status">FALSE</span>name<span class="answer-explanation">Name identifies submitted data. The label connection uses for and id.</span></label>
+      </fieldset>
+      <a class="btn fill quiz-submit" href="#quiz-results">Submit quiz</a>
+    </section>
+
+    <section class="quiz-results" id="quiz-results">
+      <h2>Answer key and explanations</h2>
+      <ol>
+        <li><strong>&lt;body&gt;</strong> — <em>Visible page content belongs in body.</em></li>
+        <li><strong>&lt;strong&gt;</strong> — <em>Strong marks importance.</em></li>
+        <li><strong>alt</strong> — <em>Alt describes an image.</em></li>
+        <li><strong>&lt;ul&gt;</strong> — <em>Ul creates an unordered list.</em></li>
+        <li><strong>&lt;th&gt;</strong> — <em>Th creates a header cell.</em></li>
+        <li><strong>&lt;input&gt;</strong> — <em>Input collects form values.</em></li>
+        <li><strong>&lt;video&gt;</strong> — <em>Video embeds video content.</em></li>
+        <li><strong>&lt;nav&gt;</strong> — <em>Nav identifies navigation links.</em></li>
+        <li><strong>head</strong> — <em>Metadata belongs in the document head.</em></li>
+        <li><strong>for</strong> — <em>For connects a label to a matching control id.</em></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="authors">
+      <li>Muqaddas Amirova</li>
+      <li>Laziza Anvarova</li>
+      <li>Muxlisa Xaydarova</li>
+    </ul>
+  </footer>
+</body>
+</html>
