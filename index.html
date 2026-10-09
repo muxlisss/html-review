@@ -29,7 +29,211 @@
       <a href="media.html"><span class="nav-icon">▶</span>Media</a>
       <a href="semantic.html"><span class="nav-icon">◇</span>Semantic</a>
       <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
+      <a href="quiz.html"><span class="nav-icon">?</span>Quiz</a>
     </nav>
+
+    <!-- The pixeled video on Homepage -->
+    <section class="site-video" aria-label="Featured video">
+      <img
+        src="media/Cyberpunk_Pixel_Room_–_Neon_City_View_&amp;_Retro_Gaming_Setup_Animated1.gif"
+        alt="Animated cyberpunk pixel room"
+      />
+    </section>
+
+    <!-- Main content of the homepage. --><main>
+      <section class="hero">
+        <p class="bubble">Chapter 1</p>
+        <h1>Page structure</h1>
+        <p>Every web page starts with the same skeleton. Learn it first.</p>
+        <span class="badge">Beginner</span>
+        <p class="buttons">
+          <a class="btn fill" href="text.html">Start Learning</a>
+          <a class="btn line" href="#path">View Pages</a>
+        </p>
+      </section>
+      <section id="path">
+        <h2>Learning path</h2>
+        <div class="cards">
+          <a class="card" href="index.html"
+            ><span class="num">1</span><strong>Page structure</strong
+            ><small
+              >Every web page starts with the same skeleton. Learn it
+              first.</small
+            ><em>Beginner</em></a
+          >
+          <a class="card" href="text.html"
+            ><span class="num">2</span><strong>Text formatting tags</strong
+            ><small>These tags change the meaning or the look of text.</small
+            ><em>Beginner</em></a
+          >
+          <a class="card" href="links.html"
+            ><span class="num">3</span><strong>Links and images</strong
+            ><small
+              >Links connect pages together and images make pages visual.</small
+            ><em>Easy</em></a
+          >
+          <a class="card" href="lists.html"
+            ><span class="num">4</span><strong>Lists</strong
+            ><small>Lists group related items.</small><em>Easy</em></a
+          >
+          <a class="card" href="tables.html"
+            ><span class="num">5</span><strong>Tables</strong
+            ><small>Tables show data in rows and columns.</small
+            ><em>Medium</em></a
+          >
+          <a class="card" href="forms.html"
+            ><span class="num">6</span><strong>Forms</strong
+            ><small>Forms collect information from visitors.</small
+            ><em>Medium</em></a
+          >
+          <a class="card" href="media.html"
+            ><span class="num">7</span><strong>Multimedia</strong
+            ><small
+              >Add sound, video and other pages inside your page. Put your files
+              in the media folder.</small
+            ><em>Medium</em></a
+          >
+          <a class="card" href="semantic.html"
+            ><span class="num">8</span><strong>Semantic and layout tags</strong
+            ><small
+              >Semantic tags describe the role of each part of a page.</small
+            ><em>Medium</em></a
+          >
+          <a class="card" href="metadata.html"
+            ><span class="num">9</span><strong>Metadata</strong
+            ><small
+              >Metadata gives information about the page to browsers and search
+              engines.</small
+            ><em>Medium</em></a
+          >
+        </div>
+      </section>
+      <article class="tag">
+        <h2>&lt;html&gt;, &lt;head&gt;, &lt;body&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;html&gt; wraps the whole page, &lt;head&gt; holds information
+          about the page and &lt;body&gt; holds what visitors see.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>lang</td>
+              <td>Language of the page</td>
+            </tr>
+            <tr>
+              <td>charset (on meta)</td>
+              <td>Character encoding, usually UTF-8</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt;
+          &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;My
+          page&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;Hello,
+          web!&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <p>Hello, web! Only the content of the body is displayed.</p>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;h1&gt; to &lt;h6&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          Headings from the most important (h1) to the least important (h6).
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>align (old)</td>
+              <td>Text alignment, replaced by CSS</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;h1&gt;Main title&lt;/h1&gt; &lt;h2&gt;Section&lt;/h2&gt;
+          &lt;h3&gt;Sub-section&lt;/h3&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <h1>Main title</h1>
+          <h2>Section</h2>
+          <h3>Sub-section</h3>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;p&gt;, &lt;br&gt; and &lt;hr&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;p&gt; makes a paragraph, &lt;br&gt; forces a line break and
+          &lt;hr&gt; draws a horizontal line.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>width (hr, old)</td>
+              <td>Line width, replaced by CSS</td>
+            </tr>
+            <tr>
+              <td>class / id</td>
+              <td>Global attributes: name the element so CSS can style it</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;p&gt;First line&lt;br&gt;Second line&lt;/p&gt; &lt;hr&gt;
+          &lt;p&gt;New paragraph&lt;/p&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <p>First line<br />Second line</p>
+          <hr />
+          <p>New paragraph</p>
+        </div>
+      </article>
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          A page has html, head and body. Headings give titles, p makes
+          paragraphs, br breaks a line and hr draws a line.
+        </p>
+      </section>
+      <p class="pager"><a class="btn fill" href="text.html">Next</a></p>
+    </main>
 
 
     <!-- Footer contains the authors and local animation. -->

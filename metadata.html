@@ -26,11 +26,133 @@
       <a href="lists.html"><span class="nav-icon">☷</span>Lists</a>
       <a href="tables.html"><span class="nav-icon">▦</span>Tables</a>
       <a href="forms.html"><span class="nav-icon">□</span>Forms</a>
-      <a href="media.html"></a><span class="nav-icon">▶</span>Media</a>
+      <a href="media.html"><span class="nav-icon">▶</span>Media</a>
       <a href="semantic.html"><span class="nav-icon">◇</span>Semantic</a>
       <a href="metadata.html" class="active"><span class="nav-icon">ⓘ</span>Metadata</a>
+      <a href="quiz.html"><span class="nav-icon">?</span>Quiz</a>
+      <a href="quiz.html"><span class="nav-icon">?</span>Quiz</a>
     </nav>
 
+    <!-- Main area contains the Metadata lesson. -->
+    <main>
+      <!-- Introductory section for the current chapter. -->
+      <section class="hero">
+        <p class="bubble">Chapter 9</p>
+        <h1>Metadata</h1>
+        <p>
+          Metadata gives information about the page to browsers and search
+          engines.
+        </p>
+        <span class="badge">Medium</span>
+      </section>
+      <article class="tag">
+        <h2>&lt;meta&gt; and &lt;title&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;meta&gt; gives information about the page and &lt;title&gt; sets
+          the tab title.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>charset</td>
+              <td>Character encoding</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>Type of info: author, description, viewport</td>
+            </tr>
+            <tr>
+              <td>content</td>
+              <td>Value of the info</td>
+            </tr>
+            <tr>
+              <td>http-equiv</td>
+              <td>Pragma directive</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta
+          name=&quot;viewport&quot; content=&quot;width=device-width,
+          initial-scale=1.0&quot;&gt; &lt;meta name=&quot;author&quot;
+          content=&quot;Student&quot;&gt; &lt;title&gt;My page&lt;/title&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <p>
+            Nothing is displayed: metadata lives in the head. Look at the title
+            in the browser tab.
+          </p>
+        </div>
+      </article>
+      <article class="tag">
+        <h2>&lt;link&gt; and &lt;base&gt;</h2>
+        <h3 class="lbl def">Definition</h3>
+        <p>
+          &lt;link&gt; connects an external file and &lt;base&gt; sets the base
+          address of all links.
+        </p>
+        <h3 class="lbl att">Attributes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>rel</td>
+              <td>Relation, for example stylesheet</td>
+            </tr>
+            <tr>
+              <td>href</td>
+              <td>Path of the file</td>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td>File type</td>
+            </tr>
+            <tr>
+              <td>target (base)</td>
+              <td>Default target of links</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="lbl ex">Example (code)</h3>
+        <div class="code-example">
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+        </div>
+        <h3 class="lbl ex">Example (result)</h3>
+        <div class="result">
+          <p>
+            Nothing is displayed: this very page uses this tag to load its
+            style.
+          </p>
+        </div>
+      </article>
+      <!-- Short summary of the lesson. -->
+      <section class="recap">
+        <h2>Quick Recap</h2>
+        <p>
+          meta describes the page, title names it and link connects files such
+          as CSS. All of them go inside head.
+        </p>
+      </section>
+      <p class="pager">
+        <a class="btn line" href="semantic.html">Previous</a>
+        <a class="btn fill" href="quiz.html">Take the quiz</a>
+      </p>
+    </main>
 
     <!-- Footer contains the authors and local animation. -->
     <footer class="site-footer">

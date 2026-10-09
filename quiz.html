@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muqaddas Amirova, Anvarova Laziza and Xaydarova Muxlisa">
+    <title>Quiz | HTML Review</title>
+    <link rel="icon" type="image/png" href="media/html_css.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+      <a class="logo" href="index.html">HTML<span>.</span>Review</a>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html"><span class="nav-icon">⌂</span>Home</a>
+      <a href="text.html"><span class="nav-icon">Aa</span>Text</a>
+      <a href="links.html"><span class="nav-icon">↗</span>Links</a>
+      <a href="lists.html"><span class="nav-icon">☷</span>Lists</a>
+      <a href="tables.html"><span class="nav-icon">▦</span>Tables</a>
+      <a href="forms.html"><span class="nav-icon">□</span>Forms</a>
+      <a href="media.html"><span class="nav-icon">▶</span>Media</a>
+      <a href="semantic.html"><span class="nav-icon">◇</span>Semantic</a>
+      <a href="metadata.html"><span class="nav-icon">ⓘ</span>Metadata</a>
+      <a href="quiz.html" class="active"><span class="nav-icon">?</span>Quiz</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <p class="bubble">Final review</p>
+        <h1>HTML themes quiz</h1>
+        <p>Test what you learned from every page. Choose one answer for each question.</p>
+        <span class="badge">No JavaScript</span>
+      </section>
+
+      <section class="quiz-intro">
+        <h2>How it works</h2>
+        <p>
+          This quiz uses only HTML and CSS. Choose one answer for every
+          question, then select <strong>Submit quiz</strong>. TRUE or FALSE
+          and explanations will appear only after submitting.
+        </p>
+      </section>
+
+      <section class="quiz" aria-label="HTML review questions">
+        <fieldset class="quiz-question">
+          <legend>1. Page structure: which element contains visible page content?</legend>
+          <label class="quiz-option correct">
+            <input type="radio" name="q1" value="body">
+            <span class="answer-status">TRUE</span>
+            &lt;body&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q1" value="head">
+            <span class="answer-status">FALSE</span>
+            &lt;head&gt;
+            <span class="answer-explanation">The &lt;head&gt; contains page information, not visible page content. The correct answer is &lt;body&gt;.</span>
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q1" value="title">
+            <span class="answer-status">FALSE</span>
+            &lt;title&gt;
+            <span class="answer-explanation">The &lt;title&gt; names the page in the browser tab. The correct answer is &lt;body&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>2. Text: which tag gives text strong importance?</legend>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q2" value="em">
+            <span class="answer-status">FALSE</span>
+            &lt;em&gt;
+            <span class="answer-explanation">The &lt;em&gt; tag adds emphasis. The correct answer for strong importance is &lt;strong&gt;.</span>
+          </label>
+          <label class="quiz-option correct">
+            <input type="radio" name="q2" value="strong">
+            <span class="answer-status">TRUE</span>
+            &lt;strong&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q2" value="mark">
+            <span class="answer-status">FALSE</span>
+            &lt;mark&gt;
+            <span class="answer-explanation">The &lt;mark&gt; tag highlights text. The correct answer for strong importance is &lt;strong&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>3. Links and images: which attribute gives an image alternative text?</legend>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q3" value="href">
+            <span class="answer-status">FALSE</span>
+            href
+            <span class="answer-explanation">href points a link to a destination. The correct image description attribute is alt.</span>
+          </label>
+          <label class="quiz-option correct">
+            <input type="radio" name="q3" value="alt">
+            <span class="answer-status">TRUE</span>
+            alt
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q3" value="src">
+            <span class="answer-status">FALSE</span>
+            src
+            <span class="answer-explanation">src identifies the image file. The correct image description attribute is alt.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>4. Lists: which tag creates an unordered list?</legend>
+          <label class="quiz-option correct">
+            <input type="radio" name="q4" value="ul">
+            <span class="answer-status">TRUE</span>
+            &lt;ul&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q4" value="ol">
+            <span class="answer-status">FALSE</span>
+            &lt;ol&gt;
+            <span class="answer-explanation">The &lt;ol&gt; tag creates an ordered list. The correct answer is &lt;ul&gt;.</span>
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q4" value="li">
+            <span class="answer-status">FALSE</span>
+            &lt;li&gt;
+            <span class="answer-explanation">The &lt;li&gt; tag creates one list item. The correct answer for an unordered list is &lt;ul&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>5. Tables: which element represents a table header cell?</legend>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q5" value="td">
+            <span class="answer-status">FALSE</span>
+            &lt;td&gt;
+            <span class="answer-explanation">The &lt;td&gt; tag represents a normal data cell. The correct header-cell tag is &lt;th&gt;.</span>
+          </label>
+          <label class="quiz-option correct">
+            <input type="radio" name="q5" value="th">
+            <span class="answer-status">TRUE</span>
+            &lt;th&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q5" value="tr">
+            <span class="answer-status">FALSE</span>
+            &lt;tr&gt;
+            <span class="answer-explanation">The &lt;tr&gt; tag represents a table row. The correct header-cell tag is &lt;th&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>6. Forms: which element collects a single-line value?</legend>
+          <label class="quiz-option correct">
+            <input type="radio" name="q6" value="input">
+            <span class="answer-status">TRUE</span>
+            &lt;input&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q6" value="label">
+            <span class="answer-status">FALSE</span>
+            &lt;label&gt;
+            <span class="answer-explanation">The &lt;label&gt; names a form control. The control that collects a value is &lt;input&gt;.</span>
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q6" value="fieldset">
+            <span class="answer-status">FALSE</span>
+            &lt;fieldset&gt;
+            <span class="answer-explanation">The &lt;fieldset&gt; groups related controls. The control that collects a value is &lt;input&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>7. Multimedia: which element embeds a video?</legend>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q7" value="audio">
+            <span class="answer-status">FALSE</span>
+            &lt;audio&gt;
+            <span class="answer-explanation">The &lt;audio&gt; tag embeds sound. The correct video element is &lt;video&gt;.</span>
+          </label>
+          <label class="quiz-option correct">
+            <input type="radio" name="q7" value="video">
+            <span class="answer-status">TRUE</span>
+            &lt;video&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q7" value="source">
+            <span class="answer-status">FALSE</span>
+            &lt;source&gt;
+            <span class="answer-explanation">The &lt;source&gt; tag provides a media file choice. The element that embeds video is &lt;video&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>8. Semantic layout: which tag is intended for site navigation?</legend>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q8" value="section">
+            <span class="answer-status">FALSE</span>
+            &lt;section&gt;
+            <span class="answer-explanation">The &lt;section&gt; groups related content. The correct navigation element is &lt;nav&gt;.</span>
+          </label>
+          <label class="quiz-option correct">
+            <input type="radio" name="q8" value="nav">
+            <span class="answer-status">TRUE</span>
+            &lt;nav&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q8" value="aside">
+            <span class="answer-status">FALSE</span>
+            &lt;aside&gt;
+            <span class="answer-explanation">The &lt;aside&gt; contains related secondary content. The correct navigation element is &lt;nav&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>9. Metadata: where is the page description usually placed?</legend>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q9" value="body">
+            <span class="answer-status">FALSE</span>
+            Inside &lt;body&gt;
+            <span class="answer-explanation">The body contains visible content. Page descriptions belong in the &lt;head&gt;.</span>
+          </label>
+          <label class="quiz-option correct">
+            <input type="radio" name="q9" value="head">
+            <span class="answer-status">TRUE</span>
+            Inside &lt;head&gt;
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q9" value="footer">
+            <span class="answer-status">FALSE</span>
+            Inside &lt;footer&gt;
+            <span class="answer-explanation">The footer contains closing page information. Page descriptions belong in the &lt;head&gt;.</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>10. HTML attributes: which attribute connects a label to a form control?</legend>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q10" value="class">
+            <span class="answer-status">FALSE</span>
+            class
+            <span class="answer-explanation">The for attribute on a label must match the control's id. class is used for styling and grouping.</span>
+          </label>
+          <label class="quiz-option correct">
+            <input type="radio" name="q10" value="for">
+            <span class="answer-status">TRUE</span>
+            for
+          </label>
+          <label class="quiz-option incorrect">
+            <input type="radio" name="q10" value="name">
+            <span class="answer-status">FALSE</span>
+            name
+            <span class="answer-explanation">name identifies submitted form data. The label-to-control connection uses for and id.</span>
+          </label>
+        </fieldset>
+
+        <a class="btn fill quiz-submit" href="#quiz-results">Submit quiz</a>
+      </section>
+
+      <section class="quiz-results" id="quiz-results">
+        <h2>Answer key and explanations</h2>
+        <p>Compare your choices with the correct answers:</p>
+        <ol>
+          <li><strong>&lt;body&gt;</strong> — <em>It contains everything visitors see.</em></li>
+          <li><strong>&lt;strong&gt;</strong> — <em>It marks text as very important.</em></li>
+          <li><strong>alt</strong> — <em>It describes an image when it cannot be seen.</em></li>
+          <li><strong>&lt;ul&gt;</strong> — <em>It creates a bulleted, unordered list.</em></li>
+          <li><strong>&lt;th&gt;</strong> — <em>It creates a header cell in a table.</em></li>
+          <li><strong>&lt;input&gt;</strong> — <em>It creates many types of form controls, including single-line fields.</em></li>
+          <li><strong>&lt;video&gt;</strong> — <em>It embeds video content with optional controls.</em></li>
+          <li><strong>&lt;nav&gt;</strong> — <em>It identifies a group of navigation links.</em></li>
+          <li><strong>&lt;head&gt;</strong> — <em>Metadata such as description belongs in the document head.</em></li>
+          <li><strong>for</strong> — <em>A label's for value connects it to the form control with the matching id.</em></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <ul class="authors">
+        <li>Muqaddas Amirova</li>
+        <li>Laziza Anvarova</li>
+        <li>Muxlisa Xaydarova</li>
+      </ul>
+      <lottie-player
+        class="footer-animation"
+        src="media/orange-skating.json"
+        width="220"
+        height="130"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+        aria-label="Orange skating animation"
+      ></lottie-player>
+    </footer>
+
+</body>
+
+</html>
