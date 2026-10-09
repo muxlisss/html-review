@@ -11,7 +11,7 @@ on one core HTML topic so the examples can be reviewed independently.
 - Text page (`text.html`)
 - Links page (`links.html`)
 
-### Liz
+### Laziza
 - Lists page (`lists.html`)
 - Tables page (`tables.html`)
 - Forms page (`forms.html`)
