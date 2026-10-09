@@ -3,6 +3,27 @@
 A small, dependency-free HTML reference project. Each page is intended to focus
 on one core HTML topic so the examples can be reviewed independently.
 
+
+## Contributors & Responsibilities
+
+### Muqaddas
+- Home page (`index.html`)
+- Text page (`text.html`)
+- Links page (`links.html`)
+
+### Laziza
+- Lists page (`lists.html`)
+- Tables page (`tables.html`)
+- Forms page (`forms.html`)
+- Icons
+- Quiz
+
+### Muxliss
+- Media page (`media.html`)
+- Semantic page (`semantic.html`)
+- Metadata page (`metadata.html`)
+
+
 ## Project Structure
 
 ```text
@@ -20,6 +41,7 @@ html-review/
 │   └── style.css       # Shared styles for the pages
 └── media/              # Images or other local media used by the examples
 ```
+
 
 ## What It Needs
 
